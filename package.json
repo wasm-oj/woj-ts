@@ -1,0 +1,31 @@
+{
+    "name": "@wasm-oj/client",
+    "version": "0.0.4",
+    "description": "OpenAPI client for @wasm-oj/client",
+    "author": "Jacob Lin <jacob@csie.cool>",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/wasm-oj/woj-ts.git"
+    },
+    "main": "./dist/index.js",
+    "typings": "./dist/index.d.ts",
+    "module": "./dist/esm/index.js",
+    "sideEffects": false,
+    "scripts": {
+        "build": "tsc && tsc -p tsconfig.esm.json",
+        "prepare": "npm run build"
+    },
+    "devDependencies": {
+        "typescript": "^4.0"
+    },
+    "homepage": "https://github.com/wasm-oj/woj-ts",
+    "keywords": [
+        "wasm-oj",
+        "api"
+    ],
+    "license": "MIT",
+    "files": [
+        "dist",
+        "README.md"
+    ]
+}
